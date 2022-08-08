@@ -7,6 +7,7 @@ import { AddressZero } from "@ethersproject/constants";
 
 import Avengers from "./images/avengers-logo.png"
 import Metamask from "./images/logo_MetaMask.svg"
+import BG from "./images/bg.jpg"
 
 const App = () => {
   // Use o hook connectWallet que o thirdweb nos dá.
@@ -208,7 +209,7 @@ const memberList = useMemo(() => {
           <img src={Avengers} />
           <h1>AvengersDAO</h1>
         </div>
-        <p>Uma DAO para os hérois integrantes dos Vingadores. Membros recebem $AVENGERS sempre concluem uma missão com sucesso.</p>
+        <p>Uma DAO para os hérois integrantes dos Vingadores. Membros recebem $ASSEMBLE sempre concluem uma missão com sucesso.</p>
 
         <div className="are-wallet">
           <button onClick={connectWithMetamask} className="btn-hero">
@@ -225,8 +226,11 @@ const memberList = useMemo(() => {
 
   if (hasClaimedNFT) {
     return (
-      <div className="member-page">
-        <h1>Página dos membros da AvengersDAO ☄️</h1>
+      <div className="member-page landing">
+        <div className="title-landing">
+          <img src={Avengers} />
+          <h1>Página de membros da AvengersDAO</h1>
+        </div>
         <p>Parabéns por fazer parte dos Vingadores!</p>
         <div>
           <div>

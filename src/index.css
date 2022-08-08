@@ -4,7 +4,8 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #EF4A37;
+  /*background-color: #EF4A37;*/
+  background-color:#D03F2E;
   color: #fff;
   overflow-x: hidden;
 }
@@ -47,17 +48,15 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-
-  margin-bottom: 4rem;
 }
 
 .landing img {
-  width: 200px;
+  width: 190px;
 }
 
 .landing p {
-  font-size: 1.6rem;
-  margin-bottom: 4rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
 }
 
 .landing,
