@@ -4,7 +4,7 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  background-color: #EF4A37;
   color: #fff;
   overflow-x: hidden;
 }
@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 @media screen and (max-width: 768px) {
   h1 {
@@ -40,6 +40,24 @@ h1 {
   padding: 1rem;
   border-radius: 1rem;
   background-color: #f00;
+}
+
+.title-landing {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  margin-bottom: 4rem;
+}
+
+.landing img {
+  width: 200px;
+}
+
+.landing p {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
 }
 
 .landing,
@@ -114,16 +132,26 @@ h1 {
   box-shadow: 3.1px 6.2px 6.2px hsl(0deg 0% 0% / 0.4);
 }
 
+.button-wallet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button-wallet img {
+  width: 30px;
+}
+
 button {
   cursor: pointer;
   background-color: #000;
   color: #fff;
   border: none;
-  font-weight: bold;
   font-family: inherit;
   padding: 1.2rem 2rem;
   text-transform: uppercase;
-  border-radius: 3rem;
+  border-radius: 0.8rem;
   font-size: 1.2rem;
 }
 
@@ -138,4 +166,8 @@ button:focus {
 button:disabled {
   opacity: 0.8;
   pointer-events: none;
+}
+
+small {
+  margin-bottom: 20px;
 }
